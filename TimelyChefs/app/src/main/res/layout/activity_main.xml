@@ -6,43 +6,160 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView_whatsNew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="What's New?"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
-
     <ImageView
         android:id="@+id/imageView_whatsnew"
         android:layout_width="0dp"
-        android:layout_height="189dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:contentDescription="imageofFood"
+        android:layout_height="230dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:contentDescription="@string/imageoffood"
         android:scaleType="centerCrop"
+        android:src="@drawable/roast"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_whatsNew"
-        tools:srcCompat="@drawable/roast" />
+        tools:src="@drawable/roast" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="333dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="35dp"
-        android:text="TextView"
+        android:id="@+id/textView_whatsNew"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:text="@string/whatsnew"
+        android:textAppearance="@style/HeaderText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <TextView
+        android:id="@+id/textView_whatElse"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:text="@string/whatelse"
+        android:textAppearance="@style/HeaderText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_caption"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textView_caption"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="17dp"
+        android:text="@string/lipsum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_whatsnew" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="32dp"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_whatElse"
+        app:layout_constraintVertical_bias="0.51">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView_whatsnew3"
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/imageoffood"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roast"
+                    tools:src="@drawable/roast" />
+
+                <TextView
+                    android:id="@+id/textView_caption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="0dp"
+                    android:padding="5dp"
+                    android:text="@string/lipsum" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView_whatsnew4"
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/imageoffood"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roast"
+                    tools:src="@drawable/roast" />
+
+
+                <TextView
+                    android:id="@+id/textView_caption4"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="0dp"
+                    android:padding="5dp"
+                    android:text="@string/lipsum" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView_whatsnew2"
+                    android:layout_width="175dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/imageoffood"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roast"
+                    tools:src="@drawable/roast" />
+
+
+                <TextView
+                    android:id="@+id/textView_caption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="0dp"
+                    android:padding="5dp"
+                    android:text="@string/lipsum" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
