@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TimelyChefs</string>
+    <string name="whatsnew">What\'s New?</string>
+    <string name="whatelse">What Else?</string>
+    <string name="imageoffood">Image of Food</string>
+    <string name="lipsum">Loren Ipsum</string>
 </resources>
