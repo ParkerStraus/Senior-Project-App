@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_whatselse"
+        tools:src="@drawable/roast"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/imageoffood"
+        android:scaleType="centerCrop"
+        android:src="@drawable/roast" />
+
+    <TextView
+        android:id="@+id/textView_caption"
+        android:layout_width="174dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/imageView_whatselse"
+        android:layout_marginStart="0dp"
+        android:padding="5dp"
+        android:text="@string/lipsum" />
+</RelativeLayout>
