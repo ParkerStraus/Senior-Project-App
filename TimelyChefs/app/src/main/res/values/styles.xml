@@ -4,4 +4,8 @@
         <item name="android:fontFamily">@font/josefinslab</item>
         <item name="android:textSize">50dp</item>
     </style>
+    <style name="RecipeBrowse" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/josefinslab</item>
+        <item name="android:textSize">30dp</item>
+    </style>
 </resources>
