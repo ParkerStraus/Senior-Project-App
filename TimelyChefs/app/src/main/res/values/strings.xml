@@ -3,5 +3,10 @@
     <string name="whatsnew">What\'s New?</string>
     <string name="whatelse">What Else?</string>
     <string name="imageoffood">Image of Food</string>
-    <string name="lipsum">Loren Ipsum</string>
+    <string name="lipsum">Loren Impsum</string>
+    <string name="homebtn">Home</string>
+    <string name="profilebtn">Profile</string>
+    <string name="explorebtn">Explore</string>
+    <string name="addnewrecipebtn">Add New Recipe</string>
+    <string name="browsebtn">Browse</string>
 </resources>

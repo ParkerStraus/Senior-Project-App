@@ -22,7 +22,10 @@
             android:id="@+id/homebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_dialog_dialer" />
+            android:contentDescription="@string/homebtn"
+            app:srcCompat="@android:drawable/ic_dialog_dialer"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="12dp" />
 
         <ImageView
             android:id="@+id/profileIcon"
@@ -30,9 +33,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginRight="12dp"
+            android:contentDescription="@string/profilebtn"
             app:layout_constraintEnd_toEndOf="@+id/toolbar"
             app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:layout_editor_absoluteY="12dp" />
+            tools:layout_editor_absoluteY="12dp"
+            tools:ignore="RtlHardcoded" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -52,22 +57,28 @@
             android:id="@+id/explorebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_dialog_dialer" />
+            android:contentDescription="@string/explorebtn"
+            app:srcCompat="@android:drawable/ic_dialog_dialer"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="12dp" />
 
         <ImageView
             android:id="@+id/addnewrecipebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginRight="12dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/addnewrecipebtn"
             app:layout_constraintEnd_toEndOf="@+id/toolbar2"
             app:srcCompat="@android:drawable/ic_dialog_info"
             tools:layout_editor_absoluteY="12dp" />
+
         <ImageView
             android:id="@+id/browsebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="@string/browsebtn"
             app:layout_constraintEnd_toEndOf="@+id/toolbar"
             app:srcCompat="@android:drawable/ic_dialog_info"
             tools:layout_editor_absoluteY="12dp" />
@@ -147,7 +158,8 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingLeft="7dp"
-            android:paddingRight="7dp">
+            android:paddingRight="7dp"
+            tools:ignore="VisualLintBounds">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -214,6 +226,7 @@
                     android:contentDescription="@string/imageoffood"
                     android:scaleType="centerCrop"
                     android:src="@drawable/roast"
+                    tools:ignore="ImageContrastCheck"
                     tools:src="@drawable/roast" />
 
 
