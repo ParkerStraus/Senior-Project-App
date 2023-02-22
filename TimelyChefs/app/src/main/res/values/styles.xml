@@ -8,4 +8,8 @@
         <item name="android:fontFamily">@font/josefinslab</item>
         <item name="android:textSize">30dp</item>
     </style>
+    <style name="HeaderText2" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/josefinslab</item>
+        <item name="android:textSize">35dp</item>
+    </style>
 </resources>
