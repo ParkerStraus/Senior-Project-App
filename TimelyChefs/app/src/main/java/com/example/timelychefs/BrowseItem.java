@@ -1,11 +1,14 @@
 package com.example.timelychefs;
 
 public class BrowseItem {
+
+    int ID;
     String recipe;
     String author;
     int image;
 
-    public BrowseItem(String recipe, String author, int image) {
+    public BrowseItem(int ID, String recipe, String author, int image) {
+        this.ID = ID;
         this.recipe = recipe;
         this.author = author;
         this.image = image;
@@ -33,5 +36,13 @@ public class BrowseItem {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 }
