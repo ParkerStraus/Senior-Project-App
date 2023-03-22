@@ -3,7 +3,10 @@ package com.example.timelychefs;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -34,7 +37,29 @@ public class BrowseActivity extends AppCompatActivity implements BrowseViewInter
         //items.add(new BrowseItem("Pizza", "Luigi", R.drawable.roast));
         //items.add(new BrowseItem("Tortellini", "Wario", R.drawable.roast));
 
+        EditText search = findViewById(R.id.searchBar);
+        search.addTextChangedListener(new TextWatcher() {
 
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String searchstring = search.getText().toString();
+                if(searchstring != ""){
+                    getJSON("http://se4500seniorproject.atwebpages.com/getRecipes.php?s="+searchstring);
+                }
+                else{
+                    getJSON("http://se4500seniorproject.atwebpages.com/getRecipes.php");
+                }
+            }
+        });
     }
 
     private void loadIntoListView(String json) throws JSONException{
