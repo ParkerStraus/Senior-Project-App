@@ -1,42 +1,25 @@
-package com.mkyong.android;
+package com.example.timelychefs;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.view.View;
-import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class AppActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    Button button;
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        addListenerOnButton();
-    }
+        setContentView(R.layout.activity_register);
+        Button btn = (Button)findViewById(R.id.register);
 
-    public void addListenerOnButton() {
-
-        final Context context = this;
-
-        button = (Button) findViewById(R.id.button1);
-
-        button.setOnClickListener(new OnClickListener() {
-
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-
-                Intent intent = new Intent(context, App2Activity.class);
-                startActivity(intent);
-
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, ELoginActivity.class));
             }
-
         });
-
     }
-
 }

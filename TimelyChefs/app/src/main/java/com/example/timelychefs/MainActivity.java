@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.homebutton:
                     break;
                 case R.id.profileIcon:
+                    Intent profileintent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(profileintent);
                     break;
                 case R.id.explorebutton:
                     break;
