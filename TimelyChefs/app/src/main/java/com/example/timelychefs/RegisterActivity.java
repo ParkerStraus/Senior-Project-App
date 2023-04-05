@@ -21,5 +21,6 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(new Intent(RegisterActivity.this, ELoginActivity.class));
             }
         });
+        //testing github dumbbussery//
     }
 }
