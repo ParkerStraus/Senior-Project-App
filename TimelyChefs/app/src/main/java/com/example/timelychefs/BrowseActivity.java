@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +33,7 @@ public class BrowseActivity extends AppCompatActivity implements BrowseViewInter
         getJSON("http://se4500seniorproject.atwebpages.com/getRecipes.php");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browse);
+        defineButtons();
 
         //items.add(new BrowseItem("Spaghetti", "Mario", R.drawable.roast));
         //items.add(new BrowseItem("Pizza", "Luigi", R.drawable.roast));
@@ -140,4 +142,38 @@ public class BrowseActivity extends AppCompatActivity implements BrowseViewInter
     public void OnLongItemClick(int position) {
 
     }
+
+    private void defineButtons() {
+        findViewById(R.id.homebutton).setOnClickListener(buttonClickListener);
+        findViewById(R.id.profileicon).setOnClickListener(buttonClickListener);
+        findViewById(R.id.explorebutton).setOnClickListener(buttonClickListener);
+        findViewById(R.id.addnewrecipebutton).setOnClickListener(buttonClickListener);
+        findViewById(R.id.browsebutton).setOnClickListener(buttonClickListener);
+    }
+
+    private View.OnClickListener buttonClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent;
+            switch (view.getId()) {
+                case R.id.homebutton:
+                    intent = new Intent(BrowseActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.profileicon:
+                    intent = new Intent(BrowseActivity.this, RegisterActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.explorebutton:
+                    break;
+                case R.id.addnewrecipebutton:
+                    break;
+                case R.id.browsebutton:
+
+                    intent = new Intent(BrowseActivity.this, BrowseActivity.class);
+                    startActivity(intent);
+                    break;
+            }
+        }
+    };
 }

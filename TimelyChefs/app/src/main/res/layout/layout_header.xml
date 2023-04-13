@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/home" />
 
         <ImageView
-            android:id="@+id/profileIcon"
+            android:id="@+id/profileicon"
             tools:ignore="RtlHardcoded"
             tools:layout_editor_absoluteY="12dp"
             android:layout_width="50dp"

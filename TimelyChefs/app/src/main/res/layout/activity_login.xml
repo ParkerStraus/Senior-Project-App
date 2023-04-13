@@ -6,84 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/blue1"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <include layout="@layout/layout_header"/>
 
-        <ImageView
-            android:id="@+id/homebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/homebtn"
-            app:srcCompat="@android:drawable/ic_dialog_dialer"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="12dp" />
-
-        <ImageView
-            android:id="@+id/profileIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginRight="12dp"
-            android:contentDescription="@string/profilebtn"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:ignore="RtlHardcoded"
-            tools:layout_editor_absoluteY="12dp" />
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/blue1"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/explorebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/explorebtn"
-            app:srcCompat="@android:drawable/ic_dialog_dialer"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="12dp" />
-
-        <ImageView
-            android:id="@+id/addnewrecipebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginEnd="12dp"
-            android:contentDescription="@string/addnewrecipebtn"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar2"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:layout_editor_absoluteY="12dp" />
-
-        <ImageView
-            android:id="@+id/browsebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:contentDescription="@string/browsebtn"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:layout_editor_absoluteY="12dp" />
-
-    </androidx.appcompat.widget.Toolbar>
-
+    <include layout="@layout/layout_footer"/>
 
     <Button
         android:id="@+id/toRegister"
@@ -93,46 +18,6 @@
         android:text="Click me to go to Register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/explorebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_dialog_dialer" />
-
-        <ImageView
-            android:id="@+id/addnewrecipebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginRight="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar2"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:layout_editor_absoluteY="12dp" />
-
-        <ImageView
-            android:id="@+id/browsebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toEndOf="@+id/toolbar"
-            app:srcCompat="@android:drawable/ic_dialog_info"
-            tools:layout_editor_absoluteY="12dp" />
-
-    </androidx.appcompat.widget.Toolbar>
 
     <Button
         android:id="@+id/loginbutton"
@@ -168,17 +53,16 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="301dp"
-        android:layout_height="53dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="94dp"
-        android:layout_marginBottom="43dp"
         android:text="Login"
         android:textAppearance="@style/HeaderText"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
