@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,26 +17,26 @@ public class MainActivity extends AppCompatActivity {
         defineButtons();
     }
 
-    public void defineButtons() {
+    private void defineButtons() {
         findViewById(R.id.homebutton).setOnClickListener(buttonClickListener);
-        findViewById(R.id.profileIcon).setOnClickListener(buttonClickListener);
+        findViewById(R.id.profileicon).setOnClickListener(buttonClickListener);
         findViewById(R.id.explorebutton).setOnClickListener(buttonClickListener);
         findViewById(R.id.addnewrecipebutton).setOnClickListener(buttonClickListener);
         findViewById(R.id.browsebutton).setOnClickListener(buttonClickListener);
     }
 
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
-        View.OnClickListener context = this;
-        Intent intent;
         @Override
         public void onClick(View view) {
+            Intent intent;
             switch (view.getId()) {
                 case R.id.homebutton:
-                    intent
+                    intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
                     break;
-                case R.id.profileIcon:
-                    Intent profileintent = new Intent(MainActivity.this, LoginActivity.class);
-                    startActivity(profileintent);
+                case R.id.profileicon:
+                    intent = new Intent(MainActivity.this, RegisterActivity.class);
+                    startActivity(intent);
                     break;
                 case R.id.explorebutton:
                     break;
