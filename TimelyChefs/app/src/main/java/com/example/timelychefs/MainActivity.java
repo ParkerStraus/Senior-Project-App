@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                     intent
                     break;
                 case R.id.profileIcon:
-                    //intent = new Intent(MainActivity.this, RegisterActivity)
+                    Intent profileintent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(profileintent);
                     break;
                 case R.id.explorebutton:
                     break;
