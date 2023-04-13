@@ -2,6 +2,7 @@ package com.example.timelychefs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,10 +27,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
+        View.OnClickListener context = this;
+        Intent intent;
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.homebutton:
+                    intent
                     break;
                 case R.id.profileIcon:
                     Intent profileintent = new Intent(MainActivity.this, LoginActivity.class);
@@ -40,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.addnewrecipebutton:
                     break;
                 case R.id.browsebutton:
-                    Intent intent = new Intent(MainActivity.this, BrowseActivity.class);
+
+                    intent = new Intent(MainActivity.this, BrowseActivity.class);
                     startActivity(intent);
                     break;
             }
