@@ -32,7 +32,9 @@ public class ELoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                //bissy stuff here
                 uname[0] = username.getText().toString();
+
             }
         });
     }
