@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--below line is to create preference category-->
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/pref_about_the_website"
+            android:entryValues="@array/pref_duration"
+            android:key="@string/key_upload_quality"
+            android:title="@string/Info" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/remind_me_for_bed_time"
+            android:title="@string/remind_for_bed_time" />
+
+        <!--below switch preference is
+            use for mobile data usage-->
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/limit_data_usage"
+            android:summary="@string/light_dark"
+            android:title="@string/theme" />
+
+        <!--below list preference is use for
+            double tap to seek option-->
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/double_tap_to_seek"
+            android:entries="@array/pref_seek_values"
+            android:entryValues="@array/pref_duration"
+            android:key="@string/pref_seek_val"
+            android:summary="@string/seconds"
+            android:title="@string/double_tap_to_seek" />
+
+        <!--below option is use to create a list
+            preference for Upload preferences-->
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_uploads"
+            android:entryValues="@array/pref_duration"
+            android:key="@string/pref_uploads"
+            android:summary="@string/specify_network_prefs"
+            android:title="Security" />
+
+        <!--below switch preferences is use to restrict mode-->
+
+        <!--below switch pref is use for enable stats option-->
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/prefs_enable_stats"
+            android:summary="@string/prefs_update"
+            android:title="@string/enable_stats" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
