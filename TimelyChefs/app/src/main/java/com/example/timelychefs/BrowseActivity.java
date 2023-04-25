@@ -164,6 +164,10 @@ public class BrowseActivity extends AppCompatActivity implements BrowseViewInter
                     intent = new Intent(BrowseActivity.this, RegisterActivity.class);
                     startActivity(intent);
                     break;
+                case R.id.registericon:
+                    intent = new Intent(BrowseActivity.this, ProfileActivity.class);
+                    startActivity(intent);
+                    break;
                 case R.id.explorebutton:
                     break;
                 case R.id.addnewrecipebutton:
