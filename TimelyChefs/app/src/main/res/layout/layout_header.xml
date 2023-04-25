@@ -13,30 +13,43 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/homebutton"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="12dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:contentDescription="@string/homebtn"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/home" />
+            app:srcCompat="@drawable/home"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="12dp" />
 
         <ImageView
             android:id="@+id/profileicon"
-            tools:ignore="RtlHardcoded"
-            tools:layout_editor_absoluteY="12dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
             android:layout_marginRight="12dp"
             android:contentDescription="@string/profilebtn"
             app:layout_constraintEnd_toEndOf="@+id/toolbar"
-            app:srcCompat="@drawable/profile" />
+            app:srcCompat="@drawable/profile"
+            tools:ignore="RtlHardcoded"
+            tools:layout_editor_absoluteY="12dp" />
+
+        <ImageView
+            android:id="@+id/registericon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/profilebtn"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:srcCompat="@drawable/registericon"
+            tools:ignore="RtlHardcoded"
+            tools:layout_editor_absoluteY="12dp" />
 
     </androidx.appcompat.widget.Toolbar>
 </androidx.constraintlayout.widget.ConstraintLayout>
