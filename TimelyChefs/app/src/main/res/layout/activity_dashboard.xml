@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -100,7 +99,6 @@
         android:layout_marginStart="41dp"
         android:layout_marginEnd="497dp"
         android:text="Welcome, "
-        style="@style/Text"
         android:textAlignment="center"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -166,13 +164,14 @@
         android:id="@+id/HomePage"
         android:layout_width="125dp"
         android:layout_height="49dp"
+        android:layout_marginBottom="64dp"
         android:background="#040B1C"
         android:backgroundTint="#FFFFFF"
         android:text="Home"
-        android:textColor="#000000"
+        android:textColor="#00897B"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="104dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
