@@ -20,8 +20,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="confirmpass">confirm Password</string>
     <string name="enteruser">Username</string>
-<<<<<<< Updated upstream
-=======
 
 
     <!-- silas-->
@@ -84,5 +82,4 @@
         <item>On any network</item>
     </string-array>
 
->>>>>>> Stashed changes
 </resources>

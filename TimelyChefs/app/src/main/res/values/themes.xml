@@ -19,8 +19,6 @@
     </style>
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-<<<<<<< Updated upstream
-=======
 
 
     <!-- light mode  silas
@@ -34,5 +32,4 @@
         <item name="android:background">@android:color/holo_blue_dark</item>
         <item name="android:textColor">#FFF</item>
     </style>-->
->>>>>>> Stashed changes
 </resources>
