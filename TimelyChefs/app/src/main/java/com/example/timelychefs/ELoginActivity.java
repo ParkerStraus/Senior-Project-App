@@ -44,10 +44,6 @@ public class ELoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-<<<<<<< Updated upstream
-                //bissy stuff here
-                uname[0] = username.getText().toString();
-=======
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                 String URL = "http://se4500seniorproject.atwebpages.com/loginAccount.php?u="+usern.getText().toString()+"&p="+ passw.getText().toString();
@@ -58,8 +54,6 @@ public class ELoginActivity extends AppCompatActivity {
                 // Request a JSON response from the provided URL.
 
                 getJSON(URL);
->>>>>>> Stashed changes
-
             }
         });
     }
