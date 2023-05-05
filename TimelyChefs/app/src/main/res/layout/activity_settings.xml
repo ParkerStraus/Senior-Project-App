@@ -152,10 +152,10 @@
             android:text="Password" />
 
         <Button
-            android:id="@+id/Homep"
+            android:id="@+id/HomeP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="notification" />
+            android:text="Back To main" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
