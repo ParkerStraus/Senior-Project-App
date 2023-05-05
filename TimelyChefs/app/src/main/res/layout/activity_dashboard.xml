@@ -124,10 +124,10 @@
         app:layout_constraintVertical_bias="0.48000002">
 
         <Button
-            android:id="@+id/Recipe"
+            android:id="@+id/Browse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My Recipe" />
+            android:text="Browse" />
 
         <Button
             android:id="@+id/RecentViews"
@@ -142,16 +142,16 @@
             android:text="Allergy Options" />
 
         <Button
-            android:id="@+id/Updates"
+            android:id="@+id/Profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Updates" />
+            android:text="Profile" />
 
         <Button
-            android:id="@+id/Documents"
+            android:id="@+id/Settings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Documents" />
+            android:text="Settings" />
 
         <View
             android:id="@+id/view"
@@ -161,7 +161,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/HomePage"
+        android:id="@+id/MainAct"
         android:layout_width="125dp"
         android:layout_height="49dp"
         android:layout_marginBottom="64dp"
